@@ -4,3 +4,9 @@
 /captures
 .idea/*
 *.iml
+
+appLibrary/src/main/gen/com/android/lvxin/sdk/R.java
+
+appLibrary/src/main/gen/com/android/lvxin/sdk/BuildConfig.java
+
+appLibrary/src/main/gen/com/android/lvxin/sdk/Manifest.java
