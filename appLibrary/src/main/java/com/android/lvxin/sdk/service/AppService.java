@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 
+import com.android.lvxin.sdk.proxy.AppProxy;
+
 /**
  * @ClassName: AppService
  * @Author: lvxin
@@ -29,7 +31,10 @@ public class AppService extends Service {
         return mBinder;
     }
 
-    static class ServiceBinder extends Binder {
+    public static class ServiceBinder extends Binder {
 
+        public AppProxy getProxy() {
+            return new AppProxy();
+        }
     }
 }
