@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CommomApplicationLibrary</string>
+
+    <string name="moments_text_hint">此刻我想说点什么。。。</string>
+    <string name="content_description">content description</string>
+
+    <string name="moments_publish">发表</string>
+    <string name="moment_detail_comment_hint">评论</string>
 </resources>

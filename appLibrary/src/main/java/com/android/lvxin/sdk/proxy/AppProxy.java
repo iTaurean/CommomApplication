@@ -7,4 +7,6 @@ package com.android.lvxin.sdk.proxy;
  * @Date: 11/26/15 17:08
  */
 public class AppProxy {
+
+    public AppProxy() {}
 }

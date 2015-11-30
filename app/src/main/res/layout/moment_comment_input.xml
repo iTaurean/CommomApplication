@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/color_bg_1"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_16">
+
+    <ImageView
+        android:id="@+id/moment_detail_comment_emotion"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:contentDescription="@string/content_description"
+        android:paddingEnd="@dimen/padding_06"
+        android:paddingLeft="0dp"
+        android:paddingRight="@dimen/padding_06"
+        android:paddingStart="0dp"
+        android:src="@mipmap/icon_face_normal" />
+
+    <com.hiifit.health.emoticon.view.EmoticonsEditText
+        android:id="@+id/moment_detail_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_bg_selector"
+        android:cursorVisible="true"
+        android:gravity="bottom"
+        android:hint="@string/moment_detail_comment_hint"
+        android:maxLength="400"
+        android:maxLines="5"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/moment_detail_comment_pulish"
+        android:layout_width="@dimen/moments_comment_btn_width"
+        android:layout_height="@dimen/moments_comment_btn_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/padding_08"
+        android:layout_marginStart="@dimen/padding_08"
+        android:layout_weight="0"
+        android:background="@drawable/comment_send_unclickable_selector"
+        android:clickable="false"
+        android:text="@string/moments_publish"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>
