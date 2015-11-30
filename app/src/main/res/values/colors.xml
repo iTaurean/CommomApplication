@@ -3,26 +3,4 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-    <color name="color_bg_1">#ffffffff</color>
-
-    <color name="color_bg">#eeeeee</color>
-
-    <color name="skyblue">#7FBBD3</color>
-
-    <color name="skyblue_trans_50">#807FBBD3</color>
-    <color name="skyblue_trans_87">#DD7FBBD3</color>
-    <color name="skyblue_trans_100">#007FBBD3</color>
-
-    <!-- Emoticons -->
-    <color name="spilt_line">#CFCFCF</color>
-    <color name="btn_send_textcolor">@android:color/white</color>
-    <color name="btn_select">#888888</color>
-    <color name="common_bg">@android:color/white</color>
-    <color name="toolbar_spilt_line">#CDCDCD</color>
-    <color name="toolbar_btn_select">#D9D9D9</color>
-    <color name="toolbar_btn_nomal">@android:color/white</color>
-    <color name="base_bg_gray">#EBEBEB</color>
-    <color name="edit_text">@android:color/black</color>
-    <color name="edit_hint_text">#ffacacac</color>
 </resources>
