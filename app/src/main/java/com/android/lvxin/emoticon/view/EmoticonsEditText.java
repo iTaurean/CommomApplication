@@ -98,7 +98,7 @@ public class EmoticonsEditText extends EditText {
         boolean isEmoticonMatcher = false;
         for (EmoticonBean bean : emoticonBeanList) {
             if (!Tools.isStrEmpty(bean.getContent()) && bean.getContent().equals(keyStr)) {
-                int resID = mContext.getResources().getIdentifier(bean.getIconUri(), "drawable",
+                int resID = mContext.getResources().getIdentifier(bean.getIconUri(), "mipmap",
                         mContext.getPackageName());
                 Drawable drawable = mContext.getResources().getDrawable((int) resID);
 
