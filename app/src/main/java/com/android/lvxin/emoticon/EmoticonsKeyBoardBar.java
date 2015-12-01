@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.android.lvxin.R;
-import com.android.lvxin.common.Tools;
 import com.android.lvxin.emoticon.bean.EmoticonBean;
 import com.android.lvxin.emoticon.utils.EmoticonsKeyboardBuilder;
 import com.android.lvxin.emoticon.utils.EmoticonsUtils;
@@ -25,6 +24,7 @@ import com.android.lvxin.emoticon.view.EmoticonsPageView;
 import com.android.lvxin.emoticon.view.EmoticonsToolBarView;
 import com.android.lvxin.emoticon.view.I.IEmoticonsKeyboard;
 import com.android.lvxin.emoticon.view.I.IView;
+import com.android.lvxin.sdk.common.Tools;
 
 public class EmoticonsKeyBoardBar extends AutoHeightLayout implements IEmoticonsKeyboard,
         View.OnClickListener, EmoticonsToolBarView.OnToolBarItemClickListener {

@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.android.lvxin.R;
+import com.android.lvxin.sdk.common.DisplayUtils;
 import com.android.lvxin.sdk.common.Tools;
 
 import java.util.ArrayList;
@@ -42,7 +43,7 @@ public class EmoticonsIndicatorView extends LinearLayout{
         this.mContext = context;
         this.setOrientation(HORIZONTAL);
 
-        mMaxHeight = Tools.dip2px(mContext, mHeight);
+        mMaxHeight = DisplayUtils.dp2px(mContext, mHeight);
         bmpSelect= BitmapFactory.decodeResource(getResources(), R.mipmap.indicator_point_select);
         bmpNomal= BitmapFactory.decodeResource(getResources(), R.mipmap.indicator_point_normal);
     }
