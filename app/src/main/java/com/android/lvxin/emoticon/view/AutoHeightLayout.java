@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.android.lvxin.common.Tools;
+import com.android.lvxin.sdk.common.Tools;
 import com.android.lvxin.emoticon.utils.EmoticonsUtils;
 
 

@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.android.lvxin.R;
-import com.android.lvxin.common.Tools;
+import com.android.lvxin.sdk.common.Tools;
 
 import java.util.ArrayList;
 
