@@ -10,7 +10,6 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.widget.Toast;
 
-import com.android.lvxin.sdk.proxy.AppProxy;
 import com.android.lvxin.sdk.service.AppService;
 
 /**
@@ -24,11 +23,11 @@ public class BaseApp extends Application {
     private static BaseApp instance;
 
     private final Handler APP_HANDLER = new Handler();
-    private AppProxy proxy;
+
     private final ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            proxy = ((AppService.ServiceBinder) service).getProxy();
+            //TODO: Do something
         }
 
         @Override
@@ -37,14 +36,6 @@ public class BaseApp extends Application {
         }
     };
     private Toast mToast;
-
-    public static AppProxy getProxy() {
-        if (null == instance.proxy) {
-            return new AppProxy();
-        } else {
-            return instance.proxy;
-        }
-    }
 
     private void setInstance(BaseApp instance) {
         this.instance = instance;
@@ -55,7 +46,7 @@ public class BaseApp extends Application {
      *
      * @return this
      */
-    public static BaseApp getApp() {
+    public BaseApp getApp() {
         return instance;
     }
 
