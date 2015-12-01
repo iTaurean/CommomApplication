@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 
 import com.android.lvxin.R;
-import com.android.lvxin.common.Tools;
 import com.android.lvxin.emoticon.bean.EmoticonBean;
 import com.android.lvxin.emoticon.utils.EmoticonsKeyboardBuilder;
 import com.android.lvxin.emoticon.utils.EmoticonsUtils;
@@ -26,6 +25,7 @@ import com.android.lvxin.emoticon.view.EmoticonsIndicatorView;
 import com.android.lvxin.emoticon.view.EmoticonsPageView;
 import com.android.lvxin.emoticon.view.EmoticonsToolBarView;
 import com.android.lvxin.emoticon.view.I.IView;
+import com.android.lvxin.sdk.common.DisplayUtils;
 
 /**
 * @ClassName: EmoticonsKeyBoardPopWindow 
@@ -56,7 +56,7 @@ public class EmoticonsKeyBoardPopWindow extends PopupWindow {
         
         this.setContentView(mConentView);
         this.setWidth(w);
-        this.setHeight(Tools.dip2px(context, EmoticonsUtils.getDefKeyboardHeight(mContext)));
+        this.setHeight(DisplayUtils.dp2px(context, EmoticonsUtils.getDefKeyboardHeight(mContext)));
         this.setAnimationStyle(R.style.PopupAnimation);
         this.update();
         this.setOutsideTouchable(true);

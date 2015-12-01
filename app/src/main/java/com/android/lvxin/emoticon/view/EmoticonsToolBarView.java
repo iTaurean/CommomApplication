@@ -10,9 +10,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.android.lvxin.R;
-import com.android.lvxin.common.Tools;
 import com.android.lvxin.emoticon.utils.EmoticonsKeyboardBuilder;
 import com.android.lvxin.emoticon.view.I.IEmoticonsKeyboard;
+import com.android.lvxin.sdk.common.DisplayUtils;
 import com.nineoldandroids.view.ViewHelper;
 
 import java.util.ArrayList;
@@ -105,7 +105,7 @@ public class EmoticonsToolBarView extends RelativeLayout implements IEmoticonsKe
             View toolBtnView = inflater.inflate(R.layout.item_toolbtn, null);
             ImageView iv_icon = (ImageView)toolBtnView.findViewById(R.id.iv_icon);
             iv_icon.setImageResource(rec);
-            LinearLayout.LayoutParams imgParams = new LinearLayout.LayoutParams(Tools.dip2px(
+            LinearLayout.LayoutParams imgParams = new LinearLayout.LayoutParams(DisplayUtils.dp2px(
                 mContext, mBtnWidth), LayoutParams.MATCH_PARENT);
             iv_icon.setLayoutParams(imgParams);
             ly_tool.addView(toolBtnView);

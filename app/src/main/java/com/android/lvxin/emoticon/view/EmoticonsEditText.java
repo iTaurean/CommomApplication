@@ -9,9 +9,9 @@ import android.util.AttributeSet;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.lvxin.common.Tools;
 import com.android.lvxin.emoticon.bean.EmoticonBean;
 import com.android.lvxin.emoticon.utils.DefEmoticons;
+import com.android.lvxin.sdk.common.Tools;
 
 import java.util.ArrayList;
 

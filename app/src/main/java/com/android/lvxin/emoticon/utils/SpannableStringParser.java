@@ -5,9 +5,9 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
 
-import com.android.lvxin.common.Tools;
 import com.android.lvxin.emoticon.bean.EmoticonBean;
 import com.android.lvxin.sdk.app.BaseApp;
+import com.android.lvxin.sdk.common.Tools;
 
 import java.util.ArrayList;
 import java.util.List;
