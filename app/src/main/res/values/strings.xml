@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Commom Application SDK</string>
+    <string name="app_name">Commom Application</string>
     <string name="action_settings">Settings</string>
+    <string name="action_moments_detail">Moments Detail</string>
     <string name="title_activity_moments">MomentsActivity</string>
+    <string name="title_activity_moments_detail">MomentsDetailActivity</string>
 </resources>

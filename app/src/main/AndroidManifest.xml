@@ -21,6 +21,11 @@
         <activity
             android:name=".activity.MomentsActivity"
             android:label="@string/title_activity_moments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MomentsDetailActivity"
+            android:label="@string/title_activity_moments_detail"
+            android:windowSoftInputMode="stateHidden|adjustResize"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

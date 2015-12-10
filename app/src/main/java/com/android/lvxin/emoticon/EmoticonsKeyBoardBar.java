@@ -1,6 +1,5 @@
 package com.android.lvxin.emoticon;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Editable;
 import android.util.AttributeSet;
@@ -48,7 +47,6 @@ public class EmoticonsKeyBoardBar extends AutoHeightLayout implements IEmoticons
         initView();
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     private void initView() {
         mEmoticonsPageView = (EmoticonsPageView) findViewById(R.id.view_epv);
         mEmoticonsIndicatorView = (EmoticonsIndicatorView) findViewById(R.id.view_eiv);
@@ -56,11 +54,10 @@ public class EmoticonsKeyBoardBar extends AutoHeightLayout implements IEmoticons
 
         mInputLayout = (LinearLayout) findViewById(R.id.layout_input);
         mFootEmoticonsLayout = (LinearLayout) findViewById(R.id.ly_foot_func);
-        mSendBtn = (Button) mInputLayout.findViewById(R.id.moment_detail_comment_pulish);
-        mSendBtn.setClickable(false);
-        mFaceBtn = (ImageView) mInputLayout.findViewById(R.id.moment_detail_comment_emotion);
-        mContentEdit = (EmoticonsEditText) mInputLayout
-                .findViewById(R.id.moment_detail_comment_content);
+        mSendBtn = (Button) findViewById(R.id.comment_pulish);
+        mSendBtn.setClickable(true);
+        mFaceBtn = (ImageView) findViewById(R.id.comment_emotion);
+        mContentEdit = (EmoticonsEditText) findViewById(R.id.comment_content);
         setAutoHeightLayoutView(mFootEmoticonsLayout);
         mFaceBtn.setOnClickListener(this);
         mSendBtn.setOnClickListener(this);
@@ -265,7 +262,7 @@ public class EmoticonsKeyBoardBar extends AutoHeightLayout implements IEmoticons
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == R.id.moment_detail_comment_emotion) {
+        if (id == R.id.comment_emotion) {
             switch (mKeyboardState) {
                 case KEYBOARD_STATE_NONE:
                 case KEYBOARD_STATE_BOTH:
@@ -288,7 +285,7 @@ public class EmoticonsKeyBoardBar extends AutoHeightLayout implements IEmoticons
                     break;
 
             }
-        } else if (id == R.id.moment_detail_comment_pulish) {
+        } else if (id == R.id.comment_pulish) {
             String content = mContentEdit.getText().toString();
 
             if (mKeyBoardBarViewListener != null && !Tools.isStrEmpty(content)) {
