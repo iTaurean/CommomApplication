@@ -52,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_send_moments:
                 MomentsActivity.start(this);
                 break;
+            case R.id.action_moments_detail:
+                MomentsDetailActivity.start(this);
+                break;
             default:
                 break;
         }
