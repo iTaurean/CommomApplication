@@ -4,4 +4,5 @@
     <string name="action_moments_detail">Moments Detail</string>
     <string name="title_activity_moments">MomentsActivity</string>
     <string name="title_activity_moments_detail">MomentsDetailActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
 </resources>
